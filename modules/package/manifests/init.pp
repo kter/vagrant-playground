@@ -1,4 +1,3 @@
-#class initial_install::package {
 class package {
   package {
     [
