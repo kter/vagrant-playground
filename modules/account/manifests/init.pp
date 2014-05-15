@@ -34,6 +34,9 @@ class account::user {
 
   file {
     '/home/kter/.ssh':
+      owner => kter,
+      group => mikkumiku,
+      mode => 700,
       ensure=> directory,
       require => User['kter']
   } 
