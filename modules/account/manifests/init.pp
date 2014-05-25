@@ -28,7 +28,7 @@ class account::user {
       group => mikkumiku,
       mode => 600,
       ensure => present,
-      #source => 'puppet:///authorized_keys',
+      source => 'puppet:///modules/authorized_keys/kter',
       require => [User['kter'], File['/home/kter/.ssh']]
   }
 
